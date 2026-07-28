@@ -1,6 +1,6 @@
 # JUST大猫 Codex Pet
 
-基于 aespa Karina 非官方二创形象 just大猫制作的 Codex 桌面宠物。
+基于aespa Karina非官方二创形象just大猫制作的 Codex 桌面宠物
 
 ![JUST大猫标准站姿](preview/base-preview.png)
 
