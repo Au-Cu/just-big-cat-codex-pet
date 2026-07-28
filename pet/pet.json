@@ -1,7 +1,7 @@
 {
   "id": "just-big-cat",
   "displayName": "JUST大猫",
-  "description": "扁平二次元版 JUST大猫，站姿双脚自然落地，不露出朝前的肉垫。",
+  "description": "基于aespa Karina非官方二创形象just大猫制作的 Codex 桌面宠物",
   "spriteVersionNumber": 2,
   "spritesheetPath": "spritesheet.webp"
 }
