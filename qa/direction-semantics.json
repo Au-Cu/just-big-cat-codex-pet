@@ -1,0 +1,133 @@
+{
+  "ok": true,
+  "reviewed_at_normal_size": true,
+  "ordered_loop": "pass",
+  "identity_and_registration": "pass",
+  "directions": [
+    {
+      "degree": "000",
+      "expected": "up",
+      "verdict": "pass",
+      "horizontal_evidence": "Centered; no horizontal axis is required.",
+      "vertical_evidence": "The head is lifted and the solid-black face rig sits high on the face."
+    },
+    {
+      "degree": "022.5",
+      "expected": "up-right",
+      "verdict": "warning",
+      "horizontal_evidence": "A subtle screen-right shift begins in the nose, mouth, and leading cheek.",
+      "vertical_evidence": "The lifted head and high face rig clearly retain the up axis."
+    },
+    {
+      "degree": "045",
+      "expected": "up-right",
+      "verdict": "pass",
+      "horizontal_evidence": "The visible face plane is clearly right of head center.",
+      "vertical_evidence": "The chin remains lifted and the face rig stays high."
+    },
+    {
+      "degree": "067.5",
+      "expected": "up-right",
+      "verdict": "pass",
+      "horizontal_evidence": "A strong screen-right three-quarter turn is visible.",
+      "vertical_evidence": "A smaller upward lift remains before the level right profile."
+    },
+    {
+      "degree": "090",
+      "expected": "right",
+      "verdict": "pass",
+      "horizontal_evidence": "The nose and W mouth sit at the screen-right edge in an unmistakable profile.",
+      "vertical_evidence": "Level pitch; no vertical axis is required."
+    },
+    {
+      "degree": "112.5",
+      "expected": "down-right",
+      "verdict": "warning",
+      "horizontal_evidence": "The profile remains unmistakably screen-right.",
+      "vertical_evidence": "The face begins a subtle bow below the level right cardinal."
+    },
+    {
+      "degree": "135",
+      "expected": "down-right",
+      "verdict": "pass",
+      "horizontal_evidence": "The visible eye, nose, and mouth remain on the screen-right side.",
+      "vertical_evidence": "The crown becomes more dominant and the face rig is clearly lowered."
+    },
+    {
+      "degree": "157.5",
+      "expected": "down-right",
+      "verdict": "pass",
+      "horizontal_evidence": "A small screen-right component remains in the near-down pose.",
+      "vertical_evidence": "The frontal bow makes down the dominant axis."
+    },
+    {
+      "degree": "180",
+      "expected": "down",
+      "verdict": "pass",
+      "horizontal_evidence": "Centered; no horizontal axis is required.",
+      "vertical_evidence": "The head is deeply bowed with crown and ears dominant and the face rig low."
+    },
+    {
+      "degree": "202.5",
+      "expected": "down-left",
+      "verdict": "warning",
+      "horizontal_evidence": "A subtle screen-left shift begins in the nose, mouth, and leading cheek.",
+      "vertical_evidence": "The strong downward bow remains dominant."
+    },
+    {
+      "degree": "225",
+      "expected": "down-left",
+      "verdict": "pass",
+      "horizontal_evidence": "The visible face plane is clearly left of head center.",
+      "vertical_evidence": "The face rig remains low beneath the crown."
+    },
+    {
+      "degree": "247.5",
+      "expected": "down-left",
+      "verdict": "pass",
+      "horizontal_evidence": "A strong screen-left three-quarter turn is visible.",
+      "vertical_evidence": "A smaller downward bow remains before the level left profile."
+    },
+    {
+      "degree": "270",
+      "expected": "left",
+      "verdict": "pass",
+      "horizontal_evidence": "The nose and W mouth sit at the screen-left edge in an unmistakable profile.",
+      "vertical_evidence": "Level pitch; no vertical axis is required."
+    },
+    {
+      "degree": "292.5",
+      "expected": "up-left",
+      "verdict": "warning",
+      "horizontal_evidence": "The profile remains unmistakably screen-left.",
+      "vertical_evidence": "The face begins a subtle lift above the level left cardinal."
+    },
+    {
+      "degree": "315",
+      "expected": "up-left",
+      "verdict": "pass",
+      "horizontal_evidence": "The visible eye, nose, and mouth remain on the screen-left side.",
+      "vertical_evidence": "The chin lifts and the face rig rises clearly."
+    },
+    {
+      "degree": "337.5",
+      "expected": "up-left",
+      "verdict": "warning",
+      "horizontal_evidence": "A small screen-left component remains in the near-up pose.",
+      "vertical_evidence": "The lifted frontal pose approaches the up anchor without reversal."
+    }
+  ],
+  "continuity_review": {
+    "verdict": "pass_with_metric_warnings",
+    "reason": "At normal pet size the loop advances up, right, down, left, and back to up without a rear view, wrong quadrant, or visible reversal. Metric outliers occur where the flat head changes between profile and frontal pitch but do not create a conspicuous visual snap.",
+    "alpha_hole_review": "Reported candidate rows are natural negative spaces at the ear notch or between outlined body parts; no transparent seam crosses a filled gray character region."
+  },
+  "leg_grounding_review": {
+    "verdict": "pass",
+    "reason": "Every standing cell uses simple gray rounded legs planted on the baseline. No standing foot exposes a forward-facing sole, pink pad, or toe bean; profile cells use a compact side-view leg silhouette."
+  },
+  "style_review": {
+    "verdict": "pass",
+    "reason": "All cells use a simplified 2D silhouette, thick rounded black line work, gray-and-black graphic regions, and no plush, fabric, fur, photographic, or 3D material treatment."
+  }
+}
