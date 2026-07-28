@@ -1,6 +1,6 @@
 # JUST大猫 Codex Pet
 
-一个非官方、扁平二次元风格的 Codex 桌面宠物。角色保留大头猫耳、灰色身体、下垂黑眼、内斜眉、小圆鼻、W 形嘴和右脸小痣等识别特征；站立时双脚自然落地，不展示朝向镜头的脚底或肉垫。
+基于 aespa Karina 非官方二创形象 just大猫制作的 Codex 桌面宠物。
 
 ![JUST大猫标准站姿](preview/base-preview.png)
 
