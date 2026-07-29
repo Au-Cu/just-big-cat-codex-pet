@@ -4,6 +4,189 @@
 
 ![JUST大猫标准站姿](preview/base-preview.png)
 
+## 安装前先看
+
+这个宠物需要安装到 **Codex 桌面版**。整个过程不会修改 Codex 程序本身，只会把下面两个宠物文件复制到你的个人目录：
+
+```text
+pet.json
+spritesheet.webp
+```
+
+Windows 用户建议先按“Windows 自动安装”操作；如果脚本无法运行，再使用后面的“Windows 手动安装”。
+
+## Windows 自动安装（推荐）
+
+### 第 1 步：下载项目
+
+1. 点击 [下载项目 ZIP](https://github.com/Au-Cu/just-big-cat-codex-pet/archive/refs/heads/main.zip)。
+2. 浏览器开始下载后，等待文件下载完成。
+3. 下载到的文件通常叫作 `just-big-cat-codex-pet-main.zip`，一般位于电脑的“下载”文件夹。
+
+### 第 2 步：解压 ZIP
+
+1. 打开电脑的“下载”文件夹。
+2. 找到 `just-big-cat-codex-pet-main.zip`。
+3. 右键点击它，选择“全部解压”。
+4. 在弹出的窗口中点击“解压”。
+5. 打开解压后的 `just-big-cat-codex-pet-main` 文件夹。
+
+打开后，应当能直接看到 `install.ps1` 文件和 `pet` 文件夹。
+
+> 必须先解压再安装。不要直接在 ZIP 压缩包预览窗口里运行脚本。
+
+### 第 3 步：运行安装脚本
+
+1. 保持 `just-big-cat-codex-pet-main` 文件夹窗口处于打开状态。
+2. 点击文件管理器顶部的地址栏。
+3. 输入 `powershell`，然后按回车键。
+4. 在弹出的蓝色或黑色 PowerShell 窗口中，复制并运行下面这条命令：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
+```
+
+这条命令只为本次安装临时允许脚本运行，不会永久修改电脑的 PowerShell 安全设置。
+
+看到类似下面的文字，就表示文件已经复制成功：
+
+```text
+Installed JUST大猫 to C:\Users\你的用户名\.codex\pets\just-big-cat
+```
+
+### 第 4 步：在 Codex 中启用
+
+1. 打开 Codex；如果 Codex 已经开着，可以先关闭再重新打开。
+2. 进入 `Settings`（设置）。
+3. 打开 `Pets`（宠物）页面。
+4. 点击 `Refresh`（刷新）。
+5. 在列表中找到并选择 `JUST大猫`。
+
+看到宠物出现在 Codex 窗口中，就说明安装完成。
+
+## Windows 手动安装（脚本无法运行时使用）
+
+这个方法不需要输入 PowerShell 命令。
+
+### 第 1 步：找到两个宠物文件
+
+打开刚才解压的项目文件夹，再打开其中的 `pet` 文件夹。里面应当有：
+
+```text
+pet.json
+spritesheet.webp
+```
+
+同时选中这两个文件，右键选择“复制”。
+
+### 第 2 步：打开 Codex 宠物目录
+
+1. 同时按下键盘上的 `Win + R`。
+2. 在“运行”窗口中粘贴下面的路径：
+
+```text
+%USERPROFILE%\.codex\pets
+```
+
+3. 点击“确定”。
+4. 在打开的文件夹中新建一个文件夹，名称必须是：
+
+```text
+just-big-cat
+```
+
+如果系统提示路径不存在，可以依次新建 `.codex`、`pets` 和 `just-big-cat` 文件夹。
+
+### 第 3 步：复制文件
+
+打开新建的 `just-big-cat` 文件夹，将之前复制的两个文件粘贴进去。最终结构应当是：
+
+```text
+C:\Users\你的用户名\.codex\pets\just-big-cat\
+├─ pet.json
+└─ spritesheet.webp
+```
+
+不要在 `just-big-cat` 里面再多放一层 `pet` 文件夹。
+
+完成后重新打开 Codex，进入 `Settings > Pets`，点击 `Refresh`，然后选择 `JUST大猫`。
+
+## macOS / Linux 安装
+
+1. 点击 [下载项目 ZIP](https://github.com/Au-Cu/just-big-cat-codex-pet/archive/refs/heads/main.zip) 并解压。
+2. 打开“终端”（Terminal）。
+3. 输入 `cd` 和一个空格，然后把解压后的项目文件夹拖进终端窗口，按回车键。
+4. 依次运行：
+
+```bash
+chmod +x install.sh
+./install.sh
+```
+
+安装完成后，文件会位于：
+
+```text
+~/.codex/pets/just-big-cat
+```
+
+然后重新打开 Codex，进入 `Settings > Pets`，点击 `Refresh`，并选择 `JUST大猫`。
+
+如果脚本无法运行，也可以手动把 `pet` 文件夹中的 `pet.json` 和 `spritesheet.webp` 复制到上面的目录。
+
+## 更新宠物
+
+重新下载最新的项目 ZIP，解压后再次运行安装脚本即可。安装脚本会覆盖旧的 `pet.json` 和 `spritesheet.webp`，不会删除其他宠物。
+
+更新后请在 `Settings > Pets` 中点击 `Refresh`。如果仍显示旧版本，关闭并重新打开 Codex。
+
+## 卸载宠物
+
+删除下面这个文件夹，然后重新打开 Codex：
+
+- Windows：`%USERPROFILE%\.codex\pets\just-big-cat`
+- macOS / Linux：`~/.codex/pets/just-big-cat`
+
+只删除 `just-big-cat` 文件夹，不要删除整个 `pets` 文件夹，否则可能同时移除其他宠物。
+
+## 常见问题
+
+### PowerShell 提示“禁止运行脚本”或“无法加载文件”
+
+不要双击 `install.ps1`。请在解压后的项目文件夹地址栏中输入 `powershell`，按回车，然后完整运行：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
+```
+
+如果仍然失败，直接使用上面的“Windows 手动安装”方法。
+
+### 提示找不到 `install.ps1`
+
+PowerShell 当前打开的不是正确文件夹。确认窗口所在目录中能看到 `install.ps1`，再运行安装命令。
+
+### 提示找不到 `pet.json` 或 `spritesheet.webp`
+
+通常是因为 ZIP 没有完整解压，或者项目文件夹结构被移动过。重新下载项目 ZIP，选择“全部解压”，不要单独移动 `install.ps1`。
+
+### Pets 列表中没有 `JUST大猫`
+
+请检查下面两个文件是否直接位于 `just-big-cat` 文件夹内：
+
+```text
+%USERPROFILE%\.codex\pets\just-big-cat\pet.json
+%USERPROFILE%\.codex\pets\just-big-cat\spritesheet.webp
+```
+
+确认后在 `Settings > Pets` 中点击 `Refresh`，必要时重启 Codex。
+
+### 能看到名称，但宠物不显示或显示异常
+
+确认 `spritesheet.webp` 没有被改名，也没有变成 `spritesheet.webp.webp`。重新复制项目中的两个宠物文件并覆盖旧文件，然后刷新宠物列表。
+
+### 更新后仍显示旧描述或旧图像
+
+先点击 `Refresh`。如果没有变化，完全退出 Codex 后重新打开。
+
 ## 特性
 
 - Codex Pet v2 图集：1536 × 2288、8 列 × 11 行、RGBA WebP
@@ -13,30 +196,6 @@
 - 已通过结构、透明通道、色键残留与方向语义检查
 
 ![动作与方向总览](preview/contact-sheet.png)
-
-## 安装
-
-### Windows
-
-在 PowerShell 中运行：
-
-```powershell
-.\install.ps1
-```
-
-也可以手动将 `pet` 目录内的两个文件复制到：
-
-```text
-%USERPROFILE%\.codex\pets\just-big-cat
-```
-
-### macOS / Linux
-
-```bash
-./install.sh
-```
-
-安装后，在 Codex 的 `Settings > Pets` 中点击 `Refresh`，然后选择 `JUST大猫`。
 
 ## 仓库结构
 
@@ -56,13 +215,26 @@ qa/
 
 ## 许可证
 
-- 配置、文档和安装脚本： [MIT](LICENSE)
-- 本仓库作者原创的视觉素材： [CC BY 4.0](ASSET-LICENSE.md)
+- 配置、文档和安装脚本：[MIT](LICENSE)
+- 本仓库作者原创的视觉素材：[CC BY 4.0](ASSET-LICENSE.md)
 
 授权仅覆盖仓库贡献者拥有权利的内容。项目名称或形象若包含第三方既有名称、角色、商标或其他受保护元素，这些权利不因本仓库许可证而被授予。详见 [NOTICE](NOTICE.md)。
 
 ## English
 
-An unofficial flat 2D Codex desktop pet featuring nine animation states and sixteen look directions. Standing poses use naturally grounded rounded legs without forward-facing soles or paw pads.
+An unofficial Codex desktop pet based on the aespa Karina fan-created character “JUST Big Cat.”
 
-Install with `install.ps1` on Windows or `install.sh` on macOS/Linux, refresh the Pets list in Codex, and select `JUST大猫`.
+Download and extract the [project ZIP](https://github.com/Au-Cu/just-big-cat-codex-pet/archive/refs/heads/main.zip). On Windows, open PowerShell in the extracted folder and run:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
+```
+
+On macOS or Linux, run:
+
+```bash
+chmod +x install.sh
+./install.sh
+```
+
+Restart Codex, open `Settings > Pets`, click `Refresh`, and select `JUST大猫`.
