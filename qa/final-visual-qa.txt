@@ -1,6 +1,7 @@
 visual_qa=pass
 qa_note=All nine animation rows and sixteen gaze cells preserve the same simplified flat 2D JUST大猫 identity, with no plush, photographic, or 3D material treatment.
 leg_grounding=pass; standing cells use simple gray rounded legs planted on the baseline, and no standing foot shows a forward-facing sole, pink pad, or toe bean
+up_dance=pass; row 4 replaces the five-frame airborne jump with an eight-frame grounded UP-inspired pump loop; left and right weight shifts, flared elbows, center recoil, and an exact matching first/last ready pose remain readable at 192x208
 direction_semantics=000 up pass; 022.5 up-right warning for subtle horizontal cue; 045 up-right pass; 067.5 up-right pass; 090 right pass; 112.5 down-right warning for subtle vertical cue; 135 down-right pass; 157.5 down-right pass; 180 down pass; 202.5 down-left warning for subtle horizontal cue; 225 down-left pass; 247.5 down-left pass; 270 left pass; 292.5 up-left warning for subtle vertical cue; 315 up-left pass; 337.5 up-left warning for subtle horizontal cue
 review_warnings=Continuity metrics flag several profile-to-frontal transitions, but labeled normal-size review shows no rear view, wrong quadrant, reversal, or conspicuous scale pop; alpha-hole candidates are natural ear-notch and limb negative spaces.
 repair_rows=none

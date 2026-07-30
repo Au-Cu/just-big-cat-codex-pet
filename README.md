@@ -190,10 +190,14 @@ PowerShell 当前打开的不是正确文件夹。确认窗口所在目录中能
 ## 特性
 
 - Codex Pet v2 图集：1536 × 2288、8 列 × 11 行、RGBA WebP
-- 9 组动画状态：待机、左右跑动、挥手、跳跃、失败、等待、工作中和审核
+- 9 组动画状态：待机、左右跑动、挥手、悬停触发的《UP》灵感泵动舞、失败、等待、工作中和审核
 - 16 个连续观察方向
 - 粗黑描边与简洁灰黑色块，不使用毛绒、摄影或 3D 材质
 - 已通过结构、透明通道、色键残留与方向语义检查
+
+将鼠标悬停在宠物上时，原来的五帧跳跃会改为八帧泵动舞：从微蹲蓄力开始，依次向左右切换重心、展开双肘，再回到自然站姿。双脚始终自然落地，不展示朝向镜头的脚底或肉垫。
+
+![《UP》灵感泵动舞预览](preview/up-dance.gif)
 
 ![动作与方向总览](preview/contact-sheet.png)
 
@@ -207,6 +211,7 @@ preview/
   base-preview.png     标准站姿
   contact-sheet.png    动作与方向总览
   look-directions.png  16 方位复核图
+  up-dance.gif         八帧悬停舞蹈预览
 qa/
   validation.json      自动结构验证报告
   direction-semantics.json
@@ -222,7 +227,7 @@ qa/
 
 ## English
 
-An unofficial Codex desktop pet based on the aespa Karina fan-created character “JUST Big Cat.”
+An unofficial Codex desktop pet based on the aespa Karina fan-created character “JUST Big Cat.” Hovering over the pet triggers an eight-frame, “UP”-inspired chibi pump dance in place of the original jump.
 
 Download and extract the [project ZIP](https://github.com/Au-Cu/just-big-cat-codex-pet/archive/refs/heads/main.zip). On Windows, open PowerShell in the extracted folder and run:
 

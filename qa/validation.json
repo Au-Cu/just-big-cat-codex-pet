@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "file": "C:\\Users\\\u5468\u91d1\u94dc\\Documents\\Codex\\2026-07-28\\ni\\just-big-cat-codex-pet\\pet\\spritesheet.webp",
+  "file": "C:\\Users\\周金铜\\Documents\\Codex\\2026-07-28\\ni\\just-big-cat-codex-pet\\pet\\spritesheet.webp",
   "format": "WEBP",
   "mode": "RGBA",
   "columns": 8,
@@ -305,7 +305,7 @@
       "row": 4,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 24365,
+      "nontransparent_pixels": 20023,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -314,7 +314,7 @@
       "row": 4,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 23376,
+      "nontransparent_pixels": 20882,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -323,7 +323,7 @@
       "row": 4,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 25321,
+      "nontransparent_pixels": 21079,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -332,7 +332,7 @@
       "row": 4,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 22069,
+      "nontransparent_pixels": 22689,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -341,7 +341,7 @@
       "row": 4,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 21807,
+      "nontransparent_pixels": 19305,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -349,8 +349,8 @@
       "state": "jumping",
       "row": 4,
       "column": 5,
-      "used": false,
-      "nontransparent_pixels": 0,
+      "used": true,
+      "nontransparent_pixels": 21094,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -358,8 +358,8 @@
       "state": "jumping",
       "row": 4,
       "column": 6,
-      "used": false,
-      "nontransparent_pixels": 0,
+      "used": true,
+      "nontransparent_pixels": 20090,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -367,8 +367,8 @@
       "state": "jumping",
       "row": 4,
       "column": 7,
-      "used": false,
-      "nontransparent_pixels": 0,
+      "used": true,
+      "nontransparent_pixels": 20023,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
