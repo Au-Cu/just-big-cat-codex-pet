@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "file": "C:\\Users\\\u5468\u91d1\u94dc\\Documents\\Codex\\2026-07-28\\ni\\just-big-cat-codex-pet\\pet\\spritesheet.webp",
+  "file": "C:\\Users\\周金铜\\Documents\\Codex\\2026-07-28\\ni\\just-big-cat-codex-pet\\pet\\spritesheet.webp",
   "format": "WEBP",
   "mode": "RGBA",
   "columns": 8,
@@ -8,6 +8,23 @@
   "sprite_version_number": 2,
   "width": 1536,
   "height": 2288,
+  "runtime_required_frames_by_row": [
+    6,
+    8,
+    8,
+    4,
+    5,
+    8,
+    6,
+    6,
+    6,
+    8,
+    8
+  ],
+  "state_choreography": {
+    "jumping_row_4": "Whiplash rigid neutral head rotates clockwise 8 degrees and follows body axes x=83/91; the rigid chin is lowered with the head to stay attached to the torso; continuous passive/active arm outlines; raised forearm separated from chin; no gray spill or transparent neck seam",
+    "running_row_7": "UP left lean uses left support; right lean uses right support; free foot is only 4 px higher with an unscaled foot-end outline; fingerless inward paws; fill palette matches idle"
+  },
   "transparent_rgb_residue_pixels": 0,
   "errors": [],
   "warnings": [],
@@ -127,7 +144,7 @@
       "used": true,
       "nontransparent_pixels": 18937,
       "opaque_chroma_key_pixels": 0,
-      "chroma_fringe_pixels": 0
+      "chroma_fringe_pixels": 2
     },
     {
       "state": "running-right",
@@ -305,7 +322,7 @@
       "row": 4,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 24365,
+      "nontransparent_pixels": 19830,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -314,7 +331,7 @@
       "row": 4,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 23376,
+      "nontransparent_pixels": 19988,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -323,7 +340,7 @@
       "row": 4,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 25321,
+      "nontransparent_pixels": 19830,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -332,7 +349,7 @@
       "row": 4,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 22069,
+      "nontransparent_pixels": 19988,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -341,7 +358,7 @@
       "row": 4,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 21807,
+      "nontransparent_pixels": 19830,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -521,7 +538,7 @@
       "row": 7,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 20331,
+      "nontransparent_pixels": 14412,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -530,7 +547,7 @@
       "row": 7,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 20367,
+      "nontransparent_pixels": 15187,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -539,7 +556,7 @@
       "row": 7,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 20235,
+      "nontransparent_pixels": 14412,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -548,7 +565,7 @@
       "row": 7,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 24274,
+      "nontransparent_pixels": 14617,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -557,7 +574,7 @@
       "row": 7,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 20148,
+      "nontransparent_pixels": 15329,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -566,7 +583,7 @@
       "row": 7,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 20247,
+      "nontransparent_pixels": 14617,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -804,5 +821,295 @@
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     }
-  ]
+  ],
+  "runtime_cell_mapping": {
+    "jumping": [
+      "low",
+      "high",
+      "low",
+      "high",
+      "low"
+    ],
+    "running": [
+      "L-up",
+      "L-down",
+      "L-up",
+      "R-up",
+      "R-down",
+      "R-up"
+    ],
+    "running_source_indices_zero_based": [
+      2,
+      3,
+      2,
+      0,
+      1,
+      0
+    ]
+  },
+  "whiplash_head_transform": {
+    "rotation_clockwise_degrees": 8,
+    "rotation_center_within_head": [
+      95,
+      71
+    ],
+    "body_axis_x_by_pose": {
+      "low": 83,
+      "high": 91
+    },
+    "head_translation_dx_by_pose": {
+      "low": -12,
+      "high": -4
+    },
+    "head_translation_dy": 5,
+    "low_to_high_body_and_head_delta_x": 8,
+    "top_edge_max_alpha": 0,
+    "exposed_gray_boundary_pixels": {
+      "low": 0,
+      "high": 0
+    },
+    "internal_neck_gap_pixels": {
+      "low": 0,
+      "high": 0
+    },
+    "passive_arm_roi_matches_v6": true,
+    "active_arm_dark_components": {
+      "low": [
+        {
+          "area": 480,
+          "bbox_inclusive": [
+            39,
+            122,
+            89,
+            163
+          ]
+        }
+      ],
+      "high": [
+        {
+          "area": 505,
+          "bbox_inclusive": [
+            29,
+            114,
+            110,
+            149
+          ]
+        }
+      ]
+    },
+    "active_arm_dark_component_continuous": true,
+    "high_forearm_chin_dark_overlap_pixels": 0
+  },
+  "support_foot_metrics": {
+    "master_1": {
+      "lean_direction": "right",
+      "lean_px": 9.76,
+      "support_side": "right",
+      "left_bottom_y": 198,
+      "right_bottom_y": 202,
+      "support_minus_lifted_px": 4,
+      "support_bottom_outline_median_px": 3.0,
+      "lifted_bottom_outline_median_px": 3.0,
+      "outline_median_delta_px": 0.0
+    },
+    "master_2": {
+      "lean_direction": "right",
+      "lean_px": 8.45,
+      "support_side": "right",
+      "left_bottom_y": 198,
+      "right_bottom_y": 202,
+      "support_minus_lifted_px": 4,
+      "support_bottom_outline_median_px": 3.0,
+      "lifted_bottom_outline_median_px": 3.0,
+      "outline_median_delta_px": 0.0
+    },
+    "master_3": {
+      "lean_direction": "left",
+      "lean_px": -7.96,
+      "support_side": "left",
+      "left_bottom_y": 202,
+      "right_bottom_y": 198,
+      "support_minus_lifted_px": 4,
+      "support_bottom_outline_median_px": 3.0,
+      "lifted_bottom_outline_median_px": 3.0,
+      "outline_median_delta_px": 0.0
+    },
+    "master_4": {
+      "lean_direction": "left",
+      "lean_px": -6.88,
+      "support_side": "left",
+      "left_bottom_y": 202,
+      "right_bottom_y": 198,
+      "support_minus_lifted_px": 4,
+      "support_bottom_outline_median_px": 3.0,
+      "lifted_bottom_outline_median_px": 4.0,
+      "outline_median_delta_px": 1.0
+    }
+  },
+  "up_color_metrics": {
+    "idle_fill_median": [
+      181,
+      175,
+      176
+    ],
+    "master_1": {
+      "fill_median": [
+        182,
+        175,
+        176
+      ],
+      "delta_from_idle": [
+        1,
+        0,
+        0
+      ],
+      "dominant_fill": [
+        182,
+        175,
+        176
+      ]
+    },
+    "master_2": {
+      "fill_median": [
+        182,
+        175,
+        176
+      ],
+      "delta_from_idle": [
+        1,
+        0,
+        0
+      ],
+      "dominant_fill": [
+        182,
+        175,
+        176
+      ]
+    },
+    "master_3": {
+      "fill_median": [
+        182,
+        175,
+        176
+      ],
+      "delta_from_idle": [
+        1,
+        0,
+        0
+      ],
+      "dominant_fill": [
+        182,
+        175,
+        176
+      ]
+    },
+    "master_4": {
+      "fill_median": [
+        182,
+        175,
+        176
+      ],
+      "delta_from_idle": [
+        1,
+        0,
+        0
+      ],
+      "dominant_fill": [
+        182,
+        175,
+        176
+      ]
+    }
+  },
+  "up_palette_transforms": {
+    "master_1": {
+      "source_anchor": [
+        188,
+        180,
+        180
+      ],
+      "target_anchor": [
+        182,
+        175,
+        176
+      ],
+      "channel_ratios": [
+        0.968085,
+        0.972222,
+        0.977778
+      ]
+    },
+    "master_2": {
+      "source_anchor": [
+        188,
+        180,
+        180
+      ],
+      "target_anchor": [
+        182,
+        175,
+        176
+      ],
+      "channel_ratios": [
+        0.968085,
+        0.972222,
+        0.977778
+      ]
+    },
+    "master_3": {
+      "source_anchor": [
+        188,
+        180,
+        180
+      ],
+      "target_anchor": [
+        182,
+        175,
+        176
+      ],
+      "channel_ratios": [
+        0.968085,
+        0.972222,
+        0.977778
+      ]
+    },
+    "master_4": {
+      "source_anchor": [
+        188,
+        180,
+        180
+      ],
+      "target_anchor": [
+        182,
+        175,
+        176
+      ],
+      "channel_ratios": [
+        0.968085,
+        0.972222,
+        0.977778
+      ]
+    }
+  },
+  "exact_pose_checks": {
+    "whiplash_1_equals_3": true,
+    "whiplash_1_equals_5": true,
+    "whiplash_2_equals_4": true,
+    "whiplash_low_differs_from_high": true,
+    "up_1_equals_3": true,
+    "up_4_equals_6": true,
+    "up_1_differs_from_2": true,
+    "up_4_differs_from_5": true
+  },
+  "unchanged_row_checks": {
+    "0": true,
+    "1": true,
+    "2": true,
+    "3": true,
+    "5": true,
+    "6": true,
+    "8": true,
+    "9": true,
+    "10": true
+  }
 }
