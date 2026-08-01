@@ -22,8 +22,8 @@
     8
   ],
   "state_choreography": {
-    "jumping_row_4": "Whiplash image-left neck grab; unchanged neutral head and all facial features rotate together clockwise 8 degrees about head center; low-high-low-high-low elbow",
-    "running_row_7": "UP L-up,L-down,L-up,R-up,R-down,R-up; support foot visibly lower than lifted foot; elbows outermost and smooth fingerless paws fold inward"
+    "jumping_row_4": "Whiplash rigid neutral head rotates clockwise 8 degrees and follows body axes x=83/91; continuous passive/active arm outlines; raised forearm separated from chin; no gray spill or transparent neck seam",
+    "running_row_7": "UP left lean uses left support; right lean uses right support; fingerless inward paws; fill palette matches idle"
   },
   "transparent_rgb_residue_pixels": 0,
   "errors": [],
@@ -322,7 +322,7 @@
       "row": 4,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 20483,
+      "nontransparent_pixels": 20152,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -331,7 +331,7 @@
       "row": 4,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 20547,
+      "nontransparent_pixels": 20392,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -340,7 +340,7 @@
       "row": 4,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 20483,
+      "nontransparent_pixels": 20152,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -349,7 +349,7 @@
       "row": 4,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 20547,
+      "nontransparent_pixels": 20392,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -358,7 +358,7 @@
       "row": 4,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 20483,
+      "nontransparent_pixels": 20152,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -538,7 +538,7 @@
       "row": 7,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 16473,
+      "nontransparent_pixels": 14261,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -547,7 +547,7 @@
       "row": 7,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 16507,
+      "nontransparent_pixels": 15007,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -556,7 +556,7 @@
       "row": 7,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 16473,
+      "nontransparent_pixels": 14261,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -565,7 +565,7 @@
       "row": 7,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 16148,
+      "nontransparent_pixels": 14456,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -574,7 +574,7 @@
       "row": 7,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 16439,
+      "nontransparent_pixels": 15108,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -583,7 +583,7 @@
       "row": 7,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 16148,
+      "nontransparent_pixels": 14456,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -837,42 +837,246 @@
       "R-up",
       "R-down",
       "R-up"
+    ],
+    "running_source_indices_zero_based": [
+      2,
+      3,
+      2,
+      0,
+      1,
+      0
     ]
   },
-  "manual_visual_constraints": {
-    "whiplash": [
-      "neutral head silhouette and face are one rigid layer",
-      "rotation is clockwise 8 degrees around the head bbox center (95, 71)",
-      "eye upper lines, nose, mouth and mole rotate with the head",
-      "neck-grab hand and low/high elbow body poses remain unchanged"
+  "whiplash_head_transform": {
+    "rotation_clockwise_degrees": 8,
+    "rotation_center_within_head": [
+      95,
+      71
     ],
-    "up": [
-      "support-foot sole line is visibly lower than the lifted whole foot",
-      "lifted foot points down and never shows sole or paw pad",
-      "elbows remain outermost and forearms fold inward as <>",
-      "paws are smooth rounded mittens with no fingers, digits or claw points"
-    ]
+    "body_axis_x_by_pose": {
+      "low": 83,
+      "high": 91
+    },
+    "head_translation_dx_by_pose": {
+      "low": -12,
+      "high": -4
+    },
+    "head_translation_dy": 1,
+    "low_to_high_body_and_head_delta_x": 8,
+    "top_edge_max_alpha": 0,
+    "exposed_gray_boundary_pixels": {
+      "low": 0,
+      "high": 0
+    },
+    "internal_neck_gap_pixels": {
+      "low": 0,
+      "high": 0
+    },
+    "passive_arm_roi_matches_v6": true,
+    "active_arm_dark_components": {
+      "low": [
+        {
+          "area": 480,
+          "bbox_inclusive": [
+            39,
+            122,
+            89,
+            163
+          ]
+        }
+      ],
+      "high": [
+        {
+          "area": 505,
+          "bbox_inclusive": [
+            29,
+            114,
+            110,
+            149
+          ]
+        }
+      ]
+    },
+    "active_arm_dark_component_continuous": true,
+    "high_forearm_chin_dark_overlap_pixels": 0
   },
   "support_foot_metrics": {
     "master_1": {
-      "support_bottom_y": 202,
-      "lifted_bottom_y": 186,
-      "support_minus_lifted_px": 16
+      "lean_direction": "right",
+      "lean_px": 9.8,
+      "support_side": "right",
+      "left_bottom_y": 192,
+      "right_bottom_y": 202,
+      "support_minus_lifted_px": 10
     },
     "master_2": {
-      "support_bottom_y": 202,
-      "lifted_bottom_y": 187,
-      "support_minus_lifted_px": 15
+      "lean_direction": "right",
+      "lean_px": 8.43,
+      "support_side": "right",
+      "left_bottom_y": 192,
+      "right_bottom_y": 202,
+      "support_minus_lifted_px": 10
     },
     "master_3": {
-      "support_bottom_y": 202,
-      "lifted_bottom_y": 186,
-      "support_minus_lifted_px": 16
+      "lean_direction": "left",
+      "lean_px": -7.97,
+      "support_side": "left",
+      "left_bottom_y": 202,
+      "right_bottom_y": 192,
+      "support_minus_lifted_px": 10
     },
     "master_4": {
-      "support_bottom_y": 202,
-      "lifted_bottom_y": 189,
-      "support_minus_lifted_px": 13
+      "lean_direction": "left",
+      "lean_px": -6.99,
+      "support_side": "left",
+      "left_bottom_y": 202,
+      "right_bottom_y": 192,
+      "support_minus_lifted_px": 10
+    }
+  },
+  "up_color_metrics": {
+    "idle_fill_median": [
+      181,
+      175,
+      176
+    ],
+    "master_1": {
+      "fill_median": [
+        182,
+        175,
+        176
+      ],
+      "delta_from_idle": [
+        1,
+        0,
+        0
+      ],
+      "dominant_fill": [
+        182,
+        175,
+        176
+      ]
+    },
+    "master_2": {
+      "fill_median": [
+        182,
+        175,
+        176
+      ],
+      "delta_from_idle": [
+        1,
+        0,
+        0
+      ],
+      "dominant_fill": [
+        182,
+        175,
+        176
+      ]
+    },
+    "master_3": {
+      "fill_median": [
+        182,
+        175,
+        176
+      ],
+      "delta_from_idle": [
+        1,
+        0,
+        0
+      ],
+      "dominant_fill": [
+        182,
+        175,
+        176
+      ]
+    },
+    "master_4": {
+      "fill_median": [
+        182,
+        175,
+        176
+      ],
+      "delta_from_idle": [
+        1,
+        0,
+        0
+      ],
+      "dominant_fill": [
+        182,
+        175,
+        176
+      ]
+    }
+  },
+  "up_palette_transforms": {
+    "master_1": {
+      "source_anchor": [
+        188,
+        180,
+        180
+      ],
+      "target_anchor": [
+        182,
+        175,
+        176
+      ],
+      "channel_ratios": [
+        0.968085,
+        0.972222,
+        0.977778
+      ]
+    },
+    "master_2": {
+      "source_anchor": [
+        188,
+        180,
+        180
+      ],
+      "target_anchor": [
+        182,
+        175,
+        176
+      ],
+      "channel_ratios": [
+        0.968085,
+        0.972222,
+        0.977778
+      ]
+    },
+    "master_3": {
+      "source_anchor": [
+        188,
+        180,
+        180
+      ],
+      "target_anchor": [
+        182,
+        175,
+        176
+      ],
+      "channel_ratios": [
+        0.968085,
+        0.972222,
+        0.977778
+      ]
+    },
+    "master_4": {
+      "source_anchor": [
+        188,
+        180,
+        180
+      ],
+      "target_anchor": [
+        182,
+        175,
+        176
+      ],
+      "channel_ratios": [
+        0.968085,
+        0.972222,
+        0.977778
+      ]
     }
   },
   "exact_pose_checks": {
