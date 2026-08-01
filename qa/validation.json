@@ -22,8 +22,8 @@
     8
   ],
   "state_choreography": {
-    "jumping_row_4": "Whiplash low-high-low-high-low neck-elbow pulse",
-    "running_row_7": "UP six-frame alternating hand-foot phrase"
+    "jumping_row_4": "Whiplash screen-right head-and-neck-grab, low-high-low-high-low active elbow",
+    "running_row_7": "UP four unique poses padded A,B,C,D,D,A for the fixed six-cell runtime"
   },
   "transparent_rgb_residue_pixels": 0,
   "errors": [],
@@ -538,7 +538,7 @@
       "row": 7,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 18534,
+      "nontransparent_pixels": 17794,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -547,7 +547,7 @@
       "row": 7,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 19269,
+      "nontransparent_pixels": 18356,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -556,7 +556,7 @@
       "row": 7,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 18691,
+      "nontransparent_pixels": 17363,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -565,7 +565,7 @@
       "row": 7,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 19506,
+      "nontransparent_pixels": 18022,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -574,7 +574,7 @@
       "row": 7,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 18564,
+      "nontransparent_pixels": 18022,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -583,7 +583,7 @@
       "row": 7,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 19177,
+      "nontransparent_pixels": 17794,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -821,5 +821,18 @@
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     }
-  ]
+  ],
+  "running_unique_pose_count": 4,
+  "running_runtime_cell_mapping": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "D-hold",
+    "A-hold"
+  ],
+  "running_duplicate_checks": {
+    "cell_4_equals_cell_3_D_hold": true,
+    "cell_5_equals_cell_0_A_hold": true
+  }
 }
