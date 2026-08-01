@@ -190,14 +190,20 @@ PowerShell 当前打开的不是正确文件夹。确认窗口所在目录中能
 ## 特性
 
 - Codex Pet v2 图集：1536 × 2288、8 列 × 11 行、RGBA WebP
-- 9 组动画状态：待机、左右跑动、挥手、悬停触发的《UP》灵感泵动舞、失败、等待、工作中和审核
+- 9 组动画状态：待机、左右移动、挥手、悬停触发的《UP》动作、失败、等待、任务运行时的《Whiplash》动作和审核
 - 16 个连续观察方向
 - 粗黑描边与简洁灰黑色块，不使用毛绒、摄影或 3D 材质
 - 已通过结构、透明通道、色键残留与方向语义检查
 
-将鼠标悬停在宠物上时，原来的五帧跳跃会改为八帧泵动舞：从微蹲蓄力开始，依次向左右切换重心、展开双肘，再回到自然站姿。双脚始终自然落地，不展示朝向镜头的脚底或肉垫。
+将鼠标悬停在宠物上时，`jumping` 状态会播放《UP》“I pump it, I pump it, I pump it up”片段的五个核心造型：胸腹收手、双肘在腰肋处短促外撑、右手抬到脸侧，再用低位松腕配合胸廓和头部左右侧倾。双脚全程宽站并自然落地，不跳跃、不横移，不展示朝向镜头的脚底或肉垫。
 
-![《UP》灵感泵动舞预览](preview/up-dance.gif)
+![《UP》动作预览](preview/up-dance.gif)
+
+当 Codex 进入 `running`（任务正在运行）状态时，会播放《Whiplash》“One look give 'em Whiplash”的单侧抓颈歪头动作。角色始终用自己的右手贴住右后颈，左手自然下垂；右肘按“低—高—低—高—低—高”的轮廓呈现一次慢抬和两次快抬，不换手，也不播放另一侧的镜像版。
+
+![《Whiplash》单侧抓颈抬肘预览](preview/whiplash-dance.gif)
+
+> 当前 Codex Pet v2 运行时对这两行有固定上限：`jumping` 只读取前 5 格，`running` 只读取前 6 格。因此图集的其余格子保持透明，避免出现“画了更多帧，实际却不会播放”的情况。逐帧研究来源和压缩映射记录在 [`qa/choreography-references.md`](qa/choreography-references.md)。
 
 ![动作与方向总览](preview/contact-sheet.png)
 
@@ -211,9 +217,11 @@ preview/
   base-preview.png     标准站姿
   contact-sheet.png    动作与方向总览
   look-directions.png  16 方位复核图
-  up-dance.gif         八帧悬停舞蹈预览
+  up-dance.gif         五帧悬停动作预览
+  whiplash-dance.gif   六帧任务运行动作预览
 qa/
   validation.json      自动结构验证报告
+  choreography-references.md
   direction-semantics.json
   final-visual-qa.txt
 ```
@@ -227,7 +235,7 @@ qa/
 
 ## English
 
-An unofficial Codex desktop pet based on the aespa Karina fan-created character “JUST Big Cat.” Hovering over the pet triggers an eight-frame, “UP”-inspired chibi pump dance in place of the original jump.
+An unofficial Codex desktop pet based on the aespa Karina fan-created character “JUST Big Cat.” Hovering triggers a five-frame, grounded transcription of the “I pump it” phrase from “UP.” While a task is running, a six-frame, one-sided neck-grab and elbow-pump transcription from “Whiplash” replaces the former generic running-state gesture.
 
 Download and extract the [project ZIP](https://github.com/Au-Cu/just-big-cat-codex-pet/archive/refs/heads/main.zip). On Windows, open PowerShell in the extracted folder and run:
 
