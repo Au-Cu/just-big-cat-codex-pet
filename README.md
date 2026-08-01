@@ -195,11 +195,11 @@ PowerShell 当前打开的不是正确文件夹。确认窗口所在目录中能
 - 粗黑描边与简洁灰黑色块，不使用毛绒、摄影或 3D 材质
 - 已通过结构、透明通道、色键残留与方向语义检查
 
-将鼠标悬停在宠物上时，`jumping` 状态会播放《Whiplash》“One look give 'em Whiplash”的五帧单侧抓颈抬肘动作。抓颈手始终固定在画面左侧颈部，另一只手臂在画面右侧自然下垂，不镜像身体或交换双手。头部不再重新绘制：它直接采用待机状态的原始中性头，把头形、双眼上沿、眼睛、鼻子、嘴和右脸小痣合成一个刚性整体，以 `(95, 71)` 为头部内部的局部旋转中心顺时针旋转 8°；这个点只对旋转保持不动，随后会跟随躯干中轴从低肘姿势的 `x=83` 移到高肘姿势的 `x=91`，所以头和身体会同步横移 8 像素，不会出现“身体动、头留在原地”。第 1、3、5 帧主动肘在身前低位，第 2、4 帧向画面左侧外旋到高位，形成“低—高—低—高—低”的清楚循环。合成时保留原始主动臂和右侧下垂臂的完整轮廓；高肘帧只在前景手臂实际覆盖的区域去掉下巴的重复描边，再把完整手臂放回最前层。颈部内部细缝会先用待机同色填实，外露边缘再统一成黑色描边，不使用会向外溢出的固定灰块，因此右手、抬肘手和下巴不会出现断线、双线粘连、透明裂缝或灰色溢出，也不添加进入或收尾动作。
+将鼠标悬停在宠物上时，`jumping` 状态会播放《Whiplash》“One look give 'em Whiplash”的五帧单侧抓颈抬肘动作。抓颈手始终固定在画面左侧颈部，另一只手臂在画面右侧自然下垂，不镜像身体或交换双手。头部不再重新绘制：它直接采用待机状态的原始中性头，把头形、双眼上沿、眼睛、鼻子、嘴、下巴线和右脸小痣合成一个刚性整体，以 `(95, 71)` 为头部内部的局部旋转中心顺时针旋转 8°，再整体向下移 5 像素，让旋转后的下巴线始终贴在躯干与动作臂的交界上，不再单独悬空；这个点只对旋转保持不动，随后会跟随躯干中轴从低肘姿势的 `x=83` 移到高肘姿势的 `x=91`，所以头和身体会同步横移 8 像素，不会出现“身体动、头留在原地”。第 1、3、5 帧主动肘在身前低位，第 2、4 帧向画面左侧外旋到高位，形成“低—高—低—高—低”的清楚循环。合成时保留原始主动臂和右侧下垂臂的完整轮廓；高肘帧只在前景手臂实际覆盖的区域去掉下巴的重复描边，再把完整手臂放回最前层。颈部内部细缝会先用待机同色填实，外露边缘再统一成黑色描边，不使用会向外溢出的固定灰块，因此右手、抬肘手和下巴不会出现断线、双线粘连、透明裂缝或灰色溢出，也不添加进入或收尾动作。
 
 ![《Whiplash》五帧悬停动作预览](preview/whiplash-dance.gif)
 
-当 Codex 进入 `running`（任务正在运行）状态时，会播放《UP》“I pump it, I pump it, I pump it up”的六格甩手动作。第 1、2、3 格向左倾并由左脚支撑，第 4、5、6 格向右倾并由右脚支撑；头、颈、躯干、骨盆和支撑腿保持同一条倾斜直轴，不把角色弯成弧线。六格中双肘始终是手臂最外点，大臂先向外、前臂再折回中线，两只圆爪始终互相指向，轮廓读作 `<>`。第 1、3、4、6 格手腕高于肘、掌背朝外；第 2、5 格手腕低于肘、掌心朝地，但手仍朝内，不摊成 `_/身体\_`。圆爪统一为无手指、无分叉、无尖角的光滑手套轮廓。四个主姿势中，同侧支撑脚底都落在 `y=202`，另一只抬起脚的脚底位于 `y=192`，稳定相差 10 像素；也就是向左倾时左脚更低、向右倾时右脚更低，不露脚底或肉垫。身体主填充色与待机状态使用相同的 `#B6AFB0`，右脸小痣在六格中保持同一脸部位置，也不添加其他动作。
+当 Codex 进入 `running`（任务正在运行）状态时，会播放《UP》“I pump it, I pump it, I pump it up”的六格甩手动作。第 1、2、3 格向左倾并由左脚支撑，第 4、5、6 格向右倾并由右脚支撑；头、颈、躯干、骨盆和支撑腿保持同一条倾斜直轴，不把角色弯成弧线。六格中双肘始终是手臂最外点，大臂先向外、前臂再折回中线，两只圆爪始终互相指向，轮廓读作 `<>`。第 1、3、4、6 格手腕高于肘、掌背朝外；第 2、5 格手腕低于肘、掌心朝地，但手仍朝内，不摊成 `_/身体\_`。圆爪统一为无手指、无分叉、无尖角的光滑手套轮廓。四个主姿势中，同侧支撑脚底都落在 `y=202`，另一只卸重脚的脚底位于 `y=198`，只高 4 像素；视觉重点是重心压在支撑脚，而不是把另一条腿明显抬起。腿杆会延长到新高度，但脚端保持原尺寸不缩放，因此卸重脚下方不再出现被纵向拉厚的假阴影；四帧脚底黑边中位厚度约为 3–4 像素，与支撑脚一致。向左倾时左脚仍更低，向右倾时右脚仍更低，不露脚底或肉垫。身体主填充色与待机状态使用相同的 `#B6AFB0`，右脸小痣在六格中保持同一脸部位置，也不添加其他动作。
 
 ![《UP》六格任务运行动作预览](preview/up-dance.gif)
 
@@ -235,7 +235,7 @@ qa/
 
 ## English
 
-An unofficial Codex desktop pet based on the aespa Karina fan-created character “JUST Big Cat.” Hovering triggers a five-frame “Whiplash” neck-grab pulse: the original neutral head and every facial feature rotate together as one rigid layer, 8° clockwise around the head-local center, while that center follows the moving body axis from x=83 to x=91. Exact foreground-arm occlusion removes the duplicate chin stroke, closes the internal neck seam, and preserves the passive arm without a leaking fixed gray patch. While a task is running, “UP” uses L-up, L-down, L-up, R-up, R-down, R-up: the lean and support side always match, the support foot ends at y=202 and the lifted foot at y=192, the fill uses the idle `#B6AFB0`, and both smooth fingerless paws face each other in a clear `<>` silhouette.
+An unofficial Codex desktop pet based on the aespa Karina fan-created character “JUST Big Cat.” Hovering triggers a five-frame “Whiplash” neck-grab pulse: the original neutral head, chin line, and every facial feature rotate together as one rigid layer, 8° clockwise around the head-local center, move down 5 px so the chin remains attached, and follow the body axis from x=83 to x=91. Exact foreground-arm occlusion closes the internal neck seam and preserves the passive arm without a leaking fixed gray patch. While a task is running, “UP” uses L-up, L-down, L-up, R-up, R-down, R-up: the lean and support side always match, the support foot ends at y=202 and the lightly unweighted foot at y=198, its original-size foot end keeps a 3–4 px outline instead of a stretched false shadow, the fill uses the idle `#B6AFB0`, and both smooth fingerless paws face each other in a clear `<>` silhouette.
 
 Download and extract the [project ZIP](https://github.com/Au-Cu/just-big-cat-codex-pet/archive/refs/heads/main.zip). On Windows, open PowerShell in the extracted folder and run:
 

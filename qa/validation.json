@@ -22,8 +22,8 @@
     8
   ],
   "state_choreography": {
-    "jumping_row_4": "Whiplash rigid neutral head rotates clockwise 8 degrees and follows body axes x=83/91; continuous passive/active arm outlines; raised forearm separated from chin; no gray spill or transparent neck seam",
-    "running_row_7": "UP left lean uses left support; right lean uses right support; fingerless inward paws; fill palette matches idle"
+    "jumping_row_4": "Whiplash rigid neutral head rotates clockwise 8 degrees and follows body axes x=83/91; the rigid chin is lowered with the head to stay attached to the torso; continuous passive/active arm outlines; raised forearm separated from chin; no gray spill or transparent neck seam",
+    "running_row_7": "UP left lean uses left support; right lean uses right support; free foot is only 4 px higher with an unscaled foot-end outline; fingerless inward paws; fill palette matches idle"
   },
   "transparent_rgb_residue_pixels": 0,
   "errors": [],
@@ -322,7 +322,7 @@
       "row": 4,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 20152,
+      "nontransparent_pixels": 19830,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -331,7 +331,7 @@
       "row": 4,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 20392,
+      "nontransparent_pixels": 19988,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -340,7 +340,7 @@
       "row": 4,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 20152,
+      "nontransparent_pixels": 19830,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -349,7 +349,7 @@
       "row": 4,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 20392,
+      "nontransparent_pixels": 19988,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -358,7 +358,7 @@
       "row": 4,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 20152,
+      "nontransparent_pixels": 19830,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -538,7 +538,7 @@
       "row": 7,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 14261,
+      "nontransparent_pixels": 14412,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -547,7 +547,7 @@
       "row": 7,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 15007,
+      "nontransparent_pixels": 15187,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -556,7 +556,7 @@
       "row": 7,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 14261,
+      "nontransparent_pixels": 14412,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -565,7 +565,7 @@
       "row": 7,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 14456,
+      "nontransparent_pixels": 14617,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -574,7 +574,7 @@
       "row": 7,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 15108,
+      "nontransparent_pixels": 15329,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -583,7 +583,7 @@
       "row": 7,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 14456,
+      "nontransparent_pixels": 14617,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -861,7 +861,7 @@
       "low": -12,
       "high": -4
     },
-    "head_translation_dy": 1,
+    "head_translation_dy": 5,
     "low_to_high_body_and_head_delta_x": 8,
     "top_edge_max_alpha": 0,
     "exposed_gray_boundary_pixels": {
@@ -903,35 +903,47 @@
   "support_foot_metrics": {
     "master_1": {
       "lean_direction": "right",
-      "lean_px": 9.8,
+      "lean_px": 9.76,
       "support_side": "right",
-      "left_bottom_y": 192,
+      "left_bottom_y": 198,
       "right_bottom_y": 202,
-      "support_minus_lifted_px": 10
+      "support_minus_lifted_px": 4,
+      "support_bottom_outline_median_px": 3.0,
+      "lifted_bottom_outline_median_px": 3.0,
+      "outline_median_delta_px": 0.0
     },
     "master_2": {
       "lean_direction": "right",
-      "lean_px": 8.43,
+      "lean_px": 8.45,
       "support_side": "right",
-      "left_bottom_y": 192,
+      "left_bottom_y": 198,
       "right_bottom_y": 202,
-      "support_minus_lifted_px": 10
+      "support_minus_lifted_px": 4,
+      "support_bottom_outline_median_px": 3.0,
+      "lifted_bottom_outline_median_px": 3.0,
+      "outline_median_delta_px": 0.0
     },
     "master_3": {
       "lean_direction": "left",
-      "lean_px": -7.97,
+      "lean_px": -7.96,
       "support_side": "left",
       "left_bottom_y": 202,
-      "right_bottom_y": 192,
-      "support_minus_lifted_px": 10
+      "right_bottom_y": 198,
+      "support_minus_lifted_px": 4,
+      "support_bottom_outline_median_px": 3.0,
+      "lifted_bottom_outline_median_px": 3.0,
+      "outline_median_delta_px": 0.0
     },
     "master_4": {
       "lean_direction": "left",
-      "lean_px": -6.99,
+      "lean_px": -6.88,
       "support_side": "left",
       "left_bottom_y": 202,
-      "right_bottom_y": 192,
-      "support_minus_lifted_px": 10
+      "right_bottom_y": 198,
+      "support_minus_lifted_px": 4,
+      "support_bottom_outline_median_px": 3.0,
+      "lifted_bottom_outline_median_px": 4.0,
+      "outline_median_delta_px": 1.0
     }
   },
   "up_color_metrics": {
