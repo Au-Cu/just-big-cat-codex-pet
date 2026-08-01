@@ -22,8 +22,8 @@
     8
   ],
   "state_choreography": {
-    "jumping_row_4": "Whiplash image-left neck-grab, opposite head tilt, large-head/short-body proportion, head-local symmetric eye upper lines, low-high-low-high-low",
-    "running_row_7": "UP L-up,L-down,L-up,R-up,R-down,R-up; elbows outermost, forearms and paws fold inward as <>"
+    "jumping_row_4": "Whiplash image-left neck grab; unchanged neutral head and all facial features rotate together clockwise 8 degrees about head center; low-high-low-high-low elbow",
+    "running_row_7": "UP L-up,L-down,L-up,R-up,R-down,R-up; support foot visibly lower than lifted foot; elbows outermost and smooth fingerless paws fold inward"
   },
   "transparent_rgb_residue_pixels": 0,
   "errors": [],
@@ -322,7 +322,7 @@
       "row": 4,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 17908,
+      "nontransparent_pixels": 20483,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -331,7 +331,7 @@
       "row": 4,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 18306,
+      "nontransparent_pixels": 20547,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -340,7 +340,7 @@
       "row": 4,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 17908,
+      "nontransparent_pixels": 20483,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -349,7 +349,7 @@
       "row": 4,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 18306,
+      "nontransparent_pixels": 20547,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -358,7 +358,7 @@
       "row": 4,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 17908,
+      "nontransparent_pixels": 20483,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -538,7 +538,7 @@
       "row": 7,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 17529,
+      "nontransparent_pixels": 16473,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -547,7 +547,7 @@
       "row": 7,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 17618,
+      "nontransparent_pixels": 16507,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -556,7 +556,7 @@
       "row": 7,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 17529,
+      "nontransparent_pixels": 16473,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -565,7 +565,7 @@
       "row": 7,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 17287,
+      "nontransparent_pixels": 16148,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -574,7 +574,7 @@
       "row": 7,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 17206,
+      "nontransparent_pixels": 16439,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -583,7 +583,7 @@
       "row": 7,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 17287,
+      "nontransparent_pixels": 16148,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -841,22 +841,45 @@
   },
   "manual_visual_constraints": {
     "whiplash": [
-      "head occupies roughly two thirds of figure height",
-      "torso and legs are compact rather than elongated",
-      "eye upper lines are mirror counterparts about tilted head-local axis",
-      "image-left grabbing hand and head-tilt direction unchanged"
+      "neutral head silhouette and face are one rigid layer",
+      "rotation is clockwise 8 degrees around the head bbox center (95, 71)",
+      "eye upper lines, nose, mouth and mole rotate with the head",
+      "neck-grab hand and low/high elbow body poses remain unchanged"
     ],
     "up": [
-      "elbows are the outermost arm points",
-      "both forearms fold inward and both rounded paws face each other",
-      "up wrists sit above elbows; down wrists sit below elbows",
-      "straight body axis, support foot, low free-foot lift and mole preserved"
+      "support-foot sole line is visibly lower than the lifted whole foot",
+      "lifted foot points down and never shows sole or paw pad",
+      "elbows remain outermost and forearms fold inward as <>",
+      "paws are smooth rounded mittens with no fingers, digits or claw points"
     ]
+  },
+  "support_foot_metrics": {
+    "master_1": {
+      "support_bottom_y": 202,
+      "lifted_bottom_y": 186,
+      "support_minus_lifted_px": 16
+    },
+    "master_2": {
+      "support_bottom_y": 202,
+      "lifted_bottom_y": 187,
+      "support_minus_lifted_px": 15
+    },
+    "master_3": {
+      "support_bottom_y": 202,
+      "lifted_bottom_y": 186,
+      "support_minus_lifted_px": 16
+    },
+    "master_4": {
+      "support_bottom_y": 202,
+      "lifted_bottom_y": 189,
+      "support_minus_lifted_px": 13
+    }
   },
   "exact_pose_checks": {
     "whiplash_1_equals_3": true,
     "whiplash_1_equals_5": true,
     "whiplash_2_equals_4": true,
+    "whiplash_low_differs_from_high": true,
     "up_1_equals_3": true,
     "up_4_equals_6": true,
     "up_1_differs_from_2": true,
