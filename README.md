@@ -195,11 +195,11 @@ PowerShell 当前打开的不是正确文件夹。确认窗口所在目录中能
 - 粗黑描边与简洁灰黑色块，不使用毛绒、摄影或 3D 材质
 - 已通过结构、透明通道、色键残留与方向语义检查
 
-将鼠标悬停在宠物上时，`jumping` 状态会播放《Whiplash》“One look give 'em Whiplash”的五帧单侧抓颈抬肘动作。抓颈手始终固定在画面左侧颈部，另一只手臂在画面右侧自然下垂；本版只把头部倾斜方向翻到另一侧，下巴线由画面左侧向右侧下落，不镜像身体或交换双手。第 1、3、5 帧主动肘在身前低位，第 2、4 帧向画面左侧外旋到高位，形成“低—高—低—高—低”的清楚循环。右脸小痣仍固定在画面右侧。双脚保持固定站姿并自然落地，也不添加进入或收尾动作。
+将鼠标悬停在宠物上时，`jumping` 状态会播放《Whiplash》“One look give 'em Whiplash”的五帧单侧抓颈抬肘动作。抓颈手始终固定在画面左侧颈部，另一只手臂在画面右侧自然下垂；头部下巴线由画面左侧向右侧下落，不镜像身体或交换双手。形象采用与待机状态接近的大头短身比例，头部约占整身高度的三分之二；双眼上沿也随整颗头旋转，并在倾斜后的头部局部中轴两侧保持镜像对称，不形成单侧挑眉。第 1、3、5 帧主动肘在身前低位，第 2、4 帧向画面左侧外旋到高位，形成“低—高—低—高—低”的清楚循环。右脸小痣固定在画面右侧，双脚自然落地，也不添加进入或收尾动作。
 
 ![《Whiplash》五帧悬停动作预览](preview/whiplash-dance.gif)
 
-当 Codex 进入 `running`（任务正在运行）状态时，会播放《UP》“I pump it, I pump it, I pump it up”的六格甩手动作。第 1、2、3 格保持同一侧支撑脚和同一条倾斜直轴，第 4、5、6 格换到另一侧；头、颈、躯干、骨盆和支撑腿保持同向，不把角色弯成弧线。第 1、3、4、6 格双手向上甩、掌背朝外；第 2、5 格双手向下甩压并外旋，掌心朝向地面。游离脚只整只贴近地面微抬，不露脚底或肉垫，右脸小痣在六格中保持同一脸部位置，也不添加胸腹收手、脸侧手势等其他动作。
+当 Codex 进入 `running`（任务正在运行）状态时，会播放《UP》“I pump it, I pump it, I pump it up”的六格甩手动作。第 1、2、3 格保持同一侧支撑脚和同一条倾斜直轴，第 4、5、6 格换到另一侧；头、颈、躯干、骨盆和支撑腿保持同向，不把角色弯成弧线。六格中双肘始终是手臂最外点，大臂先向外、前臂再折回中线，两只圆爪始终互相指向，轮廓读作 `<>`。第 1、3、4、6 格手腕高于肘、掌背朝外；第 2、5 格手腕低于肘、掌心朝地，但手仍朝内，不摊成 `_/身体\_`。游离脚只整只贴近地面微抬，不露脚底或肉垫，右脸小痣在六格中保持同一脸部位置，也不添加其他动作。
 
 ![《UP》六格任务运行动作预览](preview/up-dance.gif)
 
@@ -235,7 +235,7 @@ qa/
 
 ## English
 
-An unofficial Codex desktop pet based on the aespa Karina fan-created character “JUST Big Cat.” Hovering triggers a five-frame “Whiplash” neck-grab pulse: the grabbing paw stays on image-left while only the head tilt is reversed, followed by a low-high-low-high-low elbow loop. While a task is running, “UP” uses the fixed six-cell sequence L-up, L-down, L-up, R-up, R-down, R-up; the head, torso, pelvis, and support leg share one straight lean axis, and the repeated up poses are pixel-identical.
+An unofficial Codex desktop pet based on the aespa Karina fan-created character “JUST Big Cat.” Hovering triggers a five-frame “Whiplash” neck-grab pulse with a large-head/short-body proportion and a face rig rotated symmetrically with the tilted head. While a task is running, “UP” uses L-up, L-down, L-up, R-up, R-down, R-up: elbows remain outermost while both forearms fold inward and the rounded paws face each other in a clear `<>` silhouette.
 
 Download and extract the [project ZIP](https://github.com/Au-Cu/just-big-cat-codex-pet/archive/refs/heads/main.zip). On Windows, open PowerShell in the extracted folder and run:
 

@@ -22,8 +22,8 @@
     8
   ],
   "state_choreography": {
-    "jumping_row_4": "Whiplash image-left neck-grab; head chin line slopes down from image-left to image-right; low-high-low-high-low elbow",
-    "running_row_7": "UP six-cell L-up,L-down,L-up,R-up,R-down,R-up straight-axis phrase"
+    "jumping_row_4": "Whiplash image-left neck-grab, opposite head tilt, large-head/short-body proportion, head-local symmetric eye upper lines, low-high-low-high-low",
+    "running_row_7": "UP L-up,L-down,L-up,R-up,R-down,R-up; elbows outermost, forearms and paws fold inward as <>"
   },
   "transparent_rgb_residue_pixels": 0,
   "errors": [],
@@ -322,7 +322,7 @@
       "row": 4,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 16462,
+      "nontransparent_pixels": 17908,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -331,7 +331,7 @@
       "row": 4,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 17203,
+      "nontransparent_pixels": 18306,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -340,7 +340,7 @@
       "row": 4,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 16462,
+      "nontransparent_pixels": 17908,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -349,7 +349,7 @@
       "row": 4,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 17203,
+      "nontransparent_pixels": 18306,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -358,7 +358,7 @@
       "row": 4,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 16462,
+      "nontransparent_pixels": 17908,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -538,7 +538,7 @@
       "row": 7,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 17982,
+      "nontransparent_pixels": 17529,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -547,7 +547,7 @@
       "row": 7,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 17871,
+      "nontransparent_pixels": 17618,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -556,7 +556,7 @@
       "row": 7,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 17982,
+      "nontransparent_pixels": 17529,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -565,7 +565,7 @@
       "row": 7,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 16978,
+      "nontransparent_pixels": 17287,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -574,7 +574,7 @@
       "row": 7,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 17117,
+      "nontransparent_pixels": 17206,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -583,7 +583,7 @@
       "row": 7,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 16978,
+      "nontransparent_pixels": 17287,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -837,6 +837,20 @@
       "R-up",
       "R-down",
       "R-up"
+    ]
+  },
+  "manual_visual_constraints": {
+    "whiplash": [
+      "head occupies roughly two thirds of figure height",
+      "torso and legs are compact rather than elongated",
+      "eye upper lines are mirror counterparts about tilted head-local axis",
+      "image-left grabbing hand and head-tilt direction unchanged"
+    ],
+    "up": [
+      "elbows are the outermost arm points",
+      "both forearms fold inward and both rounded paws face each other",
+      "up wrists sit above elbows; down wrists sit below elbows",
+      "straight body axis, support foot, low free-foot lift and mole preserved"
     ]
   },
   "exact_pose_checks": {
