@@ -22,8 +22,8 @@
     8
   ],
   "state_choreography": {
-    "jumping_row_4": "Whiplash screen-right head-and-neck-grab, low-high-low-high-low active elbow",
-    "running_row_7": "UP four unique poses padded A,B,C,D,D,A for the fixed six-cell runtime"
+    "jumping_row_4": "Whiplash image-left neck-grab; head chin line slopes down from image-left to image-right; low-high-low-high-low elbow",
+    "running_row_7": "UP six-cell L-up,L-down,L-up,R-up,R-down,R-up straight-axis phrase"
   },
   "transparent_rgb_residue_pixels": 0,
   "errors": [],
@@ -322,7 +322,7 @@
       "row": 4,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 19284,
+      "nontransparent_pixels": 16462,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -331,7 +331,7 @@
       "row": 4,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 19348,
+      "nontransparent_pixels": 17203,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -340,7 +340,7 @@
       "row": 4,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 19325,
+      "nontransparent_pixels": 16462,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -349,7 +349,7 @@
       "row": 4,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 19389,
+      "nontransparent_pixels": 17203,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -358,7 +358,7 @@
       "row": 4,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 18975,
+      "nontransparent_pixels": 16462,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -538,7 +538,7 @@
       "row": 7,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 17794,
+      "nontransparent_pixels": 17982,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -547,7 +547,7 @@
       "row": 7,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 18356,
+      "nontransparent_pixels": 17871,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -556,7 +556,7 @@
       "row": 7,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 17363,
+      "nontransparent_pixels": 17982,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -565,7 +565,7 @@
       "row": 7,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 18022,
+      "nontransparent_pixels": 16978,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -574,7 +574,7 @@
       "row": 7,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 18022,
+      "nontransparent_pixels": 17117,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -583,7 +583,7 @@
       "row": 7,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 17794,
+      "nontransparent_pixels": 16978,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -822,17 +822,41 @@
       "chroma_fringe_pixels": 0
     }
   ],
-  "running_unique_pose_count": 4,
-  "running_runtime_cell_mapping": [
-    "A",
-    "B",
-    "C",
-    "D",
-    "D-hold",
-    "A-hold"
-  ],
-  "running_duplicate_checks": {
-    "cell_4_equals_cell_3_D_hold": true,
-    "cell_5_equals_cell_0_A_hold": true
+  "runtime_cell_mapping": {
+    "jumping": [
+      "low",
+      "high",
+      "low",
+      "high",
+      "low"
+    ],
+    "running": [
+      "L-up",
+      "L-down",
+      "L-up",
+      "R-up",
+      "R-down",
+      "R-up"
+    ]
+  },
+  "exact_pose_checks": {
+    "whiplash_1_equals_3": true,
+    "whiplash_1_equals_5": true,
+    "whiplash_2_equals_4": true,
+    "up_1_equals_3": true,
+    "up_4_equals_6": true,
+    "up_1_differs_from_2": true,
+    "up_4_differs_from_5": true
+  },
+  "unchanged_row_checks": {
+    "0": true,
+    "1": true,
+    "2": true,
+    "3": true,
+    "5": true,
+    "6": true,
+    "8": true,
+    "9": true,
+    "10": true
   }
 }

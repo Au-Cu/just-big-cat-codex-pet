@@ -195,15 +195,15 @@ PowerShell 当前打开的不是正确文件夹。确认窗口所在目录中能
 - 粗黑描边与简洁灰黑色块，不使用毛绒、摄影或 3D 材质
 - 已通过结构、透明通道、色键残留与方向语义检查
 
-将鼠标悬停在宠物上时，`jumping` 状态会播放《Whiplash》“One look give 'em Whiplash”的五帧单侧抓颈抬肘动作。本文的左右均指最终画面的屏幕方向：角色的头始终向画面右侧歪，画面右侧的手固定在同侧后颈，主动肘也在画面右侧；画面左侧手臂自然下垂。第 1、3、5 帧主动肘在身前低位，第 2、4 帧向外旋到高位，形成“低—高—低—高—低”的清楚循环。右脸小痣仍固定在画面右侧。双脚保持固定站姿并自然落地，不换手、不播放另一侧镜像，也不添加进入或收尾动作。
+将鼠标悬停在宠物上时，`jumping` 状态会播放《Whiplash》“One look give 'em Whiplash”的五帧单侧抓颈抬肘动作。抓颈手始终固定在画面左侧颈部，另一只手臂在画面右侧自然下垂；本版只把头部倾斜方向翻到另一侧，下巴线由画面左侧向右侧下落，不镜像身体或交换双手。第 1、3、5 帧主动肘在身前低位，第 2、4 帧向画面左侧外旋到高位，形成“低—高—低—高—低”的清楚循环。右脸小痣仍固定在画面右侧。双脚保持固定站姿并自然落地，也不添加进入或收尾动作。
 
 ![《Whiplash》五帧悬停动作预览](preview/whiplash-dance.gif)
 
-当 Codex 进入 `running`（任务正在运行）状态时，会播放《UP》“I pump it, I pump it, I pump it up”的四个独立甩手姿势。第 1、2 姿势由画面左脚整脚支撑，画面右脚贴近地面微抬，身体与头稍向画面左侧倾；第 3、4 姿势左右关系相反。第 1、3 姿势双手向上甩、掌背朝外；第 2、4 姿势双手向斜下方甩并下压、手腕外旋，掌面朝向地面而不是镜头。游离脚不高抬，不露脚底或肉垫，也不添加胸腹收手、脸侧手势等其他动作。
+当 Codex 进入 `running`（任务正在运行）状态时，会播放《UP》“I pump it, I pump it, I pump it up”的六格甩手动作。第 1、2、3 格保持同一侧支撑脚和同一条倾斜直轴，第 4、5、6 格换到另一侧；头、颈、躯干、骨盆和支撑腿保持同向，不把角色弯成弧线。第 1、3、4、6 格双手向上甩、掌背朝外；第 2、5 格双手向下甩压并外旋，掌心朝向地面。游离脚只整只贴近地面微抬，不露脚底或肉垫，右脸小痣在六格中保持同一脸部位置，也不添加胸腹收手、脸侧手势等其他动作。
 
-![《UP》四姿势任务运行动作预览](preview/up-dance.gif)
+![《UP》六格任务运行动作预览](preview/up-dance.gif)
 
-> 当前 Codex Pet v2 运行时对这两行使用固定格数：`jumping` 读取 5 格，`running` 读取 6 格，而且透明格也会被照常播放。UP 因此把四个独立姿势按 `A-B-C-D-D-A` 写入六格：第 5 格只停顿在 D，第 6 格只停顿在 A，不增加第五或第六种动作；循环时画面左倾与右倾各连续占三格。由于运行时把第 6 格固定为 220 ms，其时间仍无法做到严格四格等时。逐帧研究来源和运行时映射记录在 [`qa/choreography-references.md`](qa/choreography-references.md)。
+> 当前 Codex Pet v2 运行时对这两行使用固定格数：`jumping` 读取 5 格，`running` 读取 6 格，而且透明格也会被照常播放。Whiplash 写入 `低—高—低—高—低`；UP 写入 `左组上—左组下—左组上—右组上—右组下—右组上`。其中第 1 与第 3 格、第 4 与第 6 格分别是像素完全相同的姿势，循环不会在末格和首格之间多出不对称动作。逐帧研究来源和运行时映射记录在 [`qa/choreography-references.md`](qa/choreography-references.md)。
 
 ![动作与方向总览](preview/contact-sheet.png)
 
@@ -217,7 +217,7 @@ preview/
   base-preview.png     标准站姿
   contact-sheet.png    动作与方向总览
   look-directions.png  16 方位复核图
-  up-dance.gif         四姿势、六运行时格的任务动作预览
+  up-dance.gif         六运行时格的任务动作预览
   whiplash-dance.gif   五帧悬停动作预览
 qa/
   validation.json      自动结构验证报告
@@ -235,7 +235,7 @@ qa/
 
 ## English
 
-An unofficial Codex desktop pet based on the aespa Karina fan-created character “JUST Big Cat.” Hovering triggers a five-frame, screen-right “Whiplash” neck-grab pulse in a low-high-low-high-low loop. While a task is running, four unique “UP” poses alternate the supporting foot, slight body lean, and upward/groundward paw orientation. The fixed six-cell runtime is padded with D and A hold copies rather than extra choreography.
+An unofficial Codex desktop pet based on the aespa Karina fan-created character “JUST Big Cat.” Hovering triggers a five-frame “Whiplash” neck-grab pulse: the grabbing paw stays on image-left while only the head tilt is reversed, followed by a low-high-low-high-low elbow loop. While a task is running, “UP” uses the fixed six-cell sequence L-up, L-down, L-up, R-up, R-down, R-up; the head, torso, pelvis, and support leg share one straight lean axis, and the repeated up poses are pixel-identical.
 
 Download and extract the [project ZIP](https://github.com/Au-Cu/just-big-cat-codex-pet/archive/refs/heads/main.zip). On Windows, open PowerShell in the extracted folder and run:
 
