@@ -16,3 +16,6 @@ When redistributing or adapting the licensed original artwork, please use:
 Include a link to this repository or to the CC BY 4.0 license, and indicate whether changes were made.
 
 This license applies only to material for which the repository contributors hold the necessary rights. It does not grant permission to use third-party trademarks, names, characters, or pre-existing protected design elements.
+
+
+Clear-edged edition: flat-color edge reconstruction and removal of soft color halos. Alien-cat facial features additionally refined to retain nose and mole without a mouth.
